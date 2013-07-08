@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Welcome to my Github API Practice Site!</h1>
+
+  <p><button class='my-repositories'>See My Repositories</button></p>
+  <div id="repositories">
+    <% my_repos = Github.repos.list user: 'jlbyrne' %>
+    <% my_repos.each do |repo| %>
+      <p><%=  repo.ssh_url %></p>
+    <% end %>
+  </div>
+  <p><button class='my-avatar'>See My Avatar</button></p>
+  <div id='avatar'></div>
+  <p><button class='my-following'>See Who I'm Following</button></p>
+  <div class='following'></div>  
+</div>

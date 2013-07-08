@@ -1,2 +1,4 @@
-API_assessment_challenge_dbc
-============================
+sinatra_skeleton
+================
+
+Sinatra skeleton from dev bootcamp
